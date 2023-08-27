@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: rgb(235, 11, 11);
+}
+
+body::before{
+    content: 'XS';
+    color:rgb(241, 168, 10);
+    font-size: 50px;
+    position: fixed;
+    font-weight: bold;
+    top:10px;
+    left:10px;
+}
+
+@media (min-width: 576px){
+    body::before{
+        content: 'SM';
+    }
+}
+
+@media (min-width: 768px){
+    body::before{
+        content: 'MD';
+    }
+}
+
+@media (min-width: 992px){
+    body::before{
+        content: 'LG';
+    }
+}
+
+
+@media (min-width: 1200px){
+    body::before{
+        content: 'XL';
+    }
+}
+
+
+@media (min-width: 1400px){
+    body::before{
+        content: 'XXL';
+    }
+}
